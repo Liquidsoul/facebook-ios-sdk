@@ -22,4 +22,4 @@
 # --------------
 
 BUILD_TYPE=$(echo "$TRAVIS_JOB_NAME" | awk '{print $1}' | tr '[:upper:]' '[:lower:]')
-sh scripts/run.sh build "$BUILD_TYPE" "$XCODE_WORKSPACE" "$XCODE_SDK" "$XCODE_SCHEME"
+sh scripts/run.sh build "$BUILD_TYPE" "$XCODE_WORKSPACE" "$XCODE_SDK" "$XCODE_SCHEME" -quiet
